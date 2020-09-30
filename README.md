@@ -3,7 +3,7 @@
 Switch
 ========
 
-AWS Profile selector to switch between different profiles in the locally stored credentials file (`~/.aws/credentials`). The chosen profile is made the default so you can use the aws cli and/or the aws sdk without specifying profile.
+AWS Profile selector to switch between different profiles in the locally stored config file (`~/.aws/config`). The chosen profile is made the default so you can use the aws cli and/or the aws sdk without specifying profile.
 
 
 Requirements
