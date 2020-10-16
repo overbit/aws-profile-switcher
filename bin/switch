@@ -5,6 +5,7 @@ var profile = require('../lib/profile');
 
 var homeDir = (process.platform === 'win32') ? process.env.USERPROFILE : process.env.HOME;
 var fileName = homeDir + '/.aws/config';
+var credFileName = homeDir + '/.aws/credentials';
 
 profile.getProfileNames(fileName, function (err, profiles) {
   if (err) {
@@ -25,6 +26,14 @@ profile.getProfileNames(fileName, function (err, profiles) {
         }
         else {
           console.log("Profile switched to " + answers.profile);
+        }
+      })
+      profile.setProfile(answers.profile, credFileName, function (err) {
+        if (err) {
+          console.log("Well...that didn't work");
+        }
+        else {
+          console.log("Credentials switched to " + answers.profile);
         }
       })
     });
