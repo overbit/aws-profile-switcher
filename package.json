@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivarrian/switcher.git"
+    "url": "git+https://github.com/overbit/switcher.git"
   },
   "keywords": [
     "AWS"
