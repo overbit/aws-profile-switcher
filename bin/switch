@@ -28,12 +28,13 @@ profile.getProfileNames(fileName, function (err, profiles) {
           console.log("Profile switched to " + answers.profile);
         }
       })
-      profile.setProfile(answers.profile, credFileName, function (err) {
+      credProfileName = answers.profile.replace("profile ","")
+      profile.setProfile(credProfileName, credFileName, function (err) {
         if (err) {
           console.log("Well...that didn't work");
         }
         else {
-          console.log("Credentials switched to " + answers.profile);
+          console.log("Credentials switched to " + credProfileName);
         }
       })
     });
