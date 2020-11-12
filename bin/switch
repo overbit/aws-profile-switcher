@@ -3,9 +3,12 @@
 var inquirer = require('inquirer');
 var profile = require('../lib/profile');
 
+var fileNameEnv = process.env.AWS_CONFIG_FILE;
+var credNameEnv = process.env.AWS_SHARED_CREDENTIALS_FILE;
+
 var homeDir = (process.platform === 'win32') ? process.env.USERPROFILE : process.env.HOME;
-var fileName = homeDir + '/.aws/config';
-var credFileName = homeDir + '/.aws/credentials';
+var fileName = (fileNameEnv === undefined) ? homeDir + '/.aws/config' : fileNameEnv;
+var credFileName = (credNameEnv === undefined) ? homeDir + '/.aws/credentials' : credNameEnv;
 
 profile.getProfileNames(fileName, function (err, profiles) {
   if (err) {
