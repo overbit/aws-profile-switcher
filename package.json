@@ -1,7 +1,7 @@
 {
-  "name": "switcher",
+  "name": "aws-profile-switcher",
   "version": "1.0.0",
-  "description": "AWS profile switcher",
+  "description": "AWS profile switcher. Supports AWS SSO",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,12 +12,12 @@
   "keywords": [
     "AWS"
   ],
-  "author": "Ravi Nair <ravi.nair@news.com.au> (http://graygoofactory.com)",
-  "license": "ISC",
+  "author": "Overbit",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ivarrian/switcher/issues"
+    "url": "https://github.com/overbit/switcher/issues"
   },
-  "homepage": "https://github.com/ivarrian/switcher#readme",
+  "homepage": "https://github.com/overbit/switcher#readme",
   "dependencies": {
     "inquirer": "^0.10.1",
     "linebyline": "^1.1.0"
