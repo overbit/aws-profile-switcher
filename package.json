@@ -1,5 +1,5 @@
 {
-  "name": "aws-profile-switcher",
+  "name": "aws-switch-profile",
   "version": "1.0.0",
   "description": "AWS profile switcher. Supports AWS SSO",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/overbit/switcher#readme",
   "dependencies": {
-    "inquirer": "^0.10.1",
+    "inquirer": "^7.3.3",
     "linebyline": "^1.1.0"
   },
   "bin": {
