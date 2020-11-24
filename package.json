@@ -1,6 +1,6 @@
 {
   "name": "aws-switch-profile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AWS profile switcher. Supports AWS SSO",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

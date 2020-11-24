@@ -15,14 +15,16 @@ profile.getProfileNames(fileName, function (err, profiles) {
     console.log(err);
   }
   else {
-    inquirer.prompt([
+    inquirer
+    .prompt([
       {
         type: "list",
         name: "profile",
         message: "Choose profile to load:",
         choices: profiles
       }
-    ], function (answers) {
+    ])
+    .then((answers) => {
       profile.setProfile(answers.profile, fileName, function (err) {
         if (err) {
           console.log("Well...that didn't work");
