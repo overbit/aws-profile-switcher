@@ -7,7 +7,7 @@ AWS Profile selector to switch between different profiles in the locally stored 
 
 ## Requirements
 
-* [nodejs](https://nodejs.org/en/)
+* [nodejs](https://nodejs.org/en/) 14.0+
 
 ## Install
 ```shell
